@@ -183,6 +183,7 @@ export class ProgressCircle extends Component {
                 color,
                 fontSize: textSize / 4.5,
                 fontWeight: '300',
+                textAlign: 'center'
               }, textStyle]}
             >
               {progress ? formatText(progress._value) : this.forceUpdate()}
