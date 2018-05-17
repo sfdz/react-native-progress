@@ -185,7 +185,7 @@ export class ProgressCircle extends Component {
                 fontWeight: '300',
               }, textStyle]}
             >
-              {formatText(progressValue)}
+              {progress ? formatText(progress._value) : this.forceUpdate()}
             </Text>
           </View>
         ) : false}
